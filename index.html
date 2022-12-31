@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revpanda Practical Test Task</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <a href="/"><img src="img/logo.png" class="logo"></a>
+            <h1 class="title">Practical Test Task</h1>
+            <form action="insert.php" method="post" class="form">
+                <div class="field">
+                    <label>#1 - This will be saved in Table A</label>
+                    <input type="text" name="a" required autocomplete="off">
+                </div>
+                <div class="field">
+                    <label>#2 - This will be saved in Table B</label>
+                    <input type="number" name="b" required autocomplete="off">
+                </div>
+                <div class="field">
+                    <label>#3 - This will be saved in Table C</label>
+                    <input type="text" name="c" required autocomplete="off">
+                </div>
+                <input type="submit" name="save" value="Save Data">
+            </form>
+
+            <!-- Buttons to go to specific views -->
+            <div class="buttons">
+                <!-- Display "A" table values -->
+                <a href="view.php?id=1" class="btn">View #1</a>
+                <!-- Display "A", "B," "C" table values, in that order -->
+                <a href="view.php?id=2" class="btn">View #2</a>
+                <!-- Display "C" and "B" table values, in that order -->
+                <a href="view.php?id=3" class="btn">View #3</a>
+                <!-- Display "B" table values in Ascending order -->
+                <a href="view.php?id=4" class="btn">View #4</a>
+                <!-- Display "B" table values in Descending order -->
+                <a href="view.php?id=5" class="btn">View #5</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
